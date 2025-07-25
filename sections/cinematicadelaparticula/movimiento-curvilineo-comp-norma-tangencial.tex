@@ -1,0 +1,39 @@
+\subsection*{Movimiento curvilíneo - Componentes Normal y tangencial}
+\subsubsection*{Rotación del vector unitario}
+Sea e un vector unitario que gira en un plano respecto a una línea de referencia $L_0$ en el plano.
+La derivada de $\vb{e_t}$ con respecto al tiempo es:
+$$ \dv{\vb{e_t}}{t}=\dv{\theta}{t} \ \vb{e_n}=\omega \ \vb{e_n} $$
+donde $\vb{e_n}$ es un vector unitario que es perpendicular a $\vb{e_t}$ y apunta en la dirección positiva.
+\subsubsection*{Componentes Normal y Tangencial}
+\textit{\textbf{Velocidad}}
+\begin{Theorem*}{Velocidad – en función a sus componentes normal y tangencial}
+	El vector velocidad $\vb{v}$ del punto $P$ en función a sus componentes normal y tangencial, es la razón de cambio del desplazamiento con respecto al tiempo:
+	$$ \vb{v}=\dv{s}{t} \ \vb{e_t}=v \ \vb{e_t} $$
+\end{Theorem*}
+Note usted que la velocidad del movimiento en términos de los componentes normal y tangencial es igual en valor, a la velocidad del movimiento rectilíneo. Por lo tanto, se puede usar los mismos métodos del movimiento rectilíneo como por ejemplo las conocidas para $v$. \\
+\textit{\textbf{Módulo del vector velocidad (en el movimiento normal-tangencial)}} \\
+El modulo del vector velocidad en el movimiento normal-tangencial es:
+$$ v=\left|\va{v}\right|=\left|\vb{v}\right| $$
+\textit{\textbf{Aceleración}}
+\begin{Theorem*}{Aceleración – en función a sus componentes normal y tangencial}
+	El vector aceleración $\vb{a}$ del punto $P$ en función a sus componentes normal y tangencial, es igual a la suma de sus componentes:
+	$$ \vb{a}=a_t \ \vb{e_t}+a_n \ \vb{e_n} $$
+	Donde:
+	$$a_t=\dv{v}{t}=\frac{\vb{v}\circ\vb{a}}{v}$$
+	$$a_n=v\dv{\theta}{t}=\frac{v^2}{\rho}=\frac{\vb{v}\cross\vb{a}}{v}$$
+\end{Theorem*}
+Note usted que la aceleración tangencial es igual en valor a la aceleración del movimiento rectilíneo. Por lo tanto, se puede usar los mismos métodos como por ejemplo las conocidas para $a$. \\
+\textit{\textbf{Modulo del vector aceleración (en el movimiento normal-tangencial)}} \\
+El modulo del vector aceleración viene siendo el vector resultante de $a_t$ y $a_n$:
+$$ a=\sqrt{a_t^2+a_n^2} $$
+\subsubsection*{Componentes normal y tangencial en un marco de referencia cartesiano}
+Las relaciones de los vectores unitarios et y en, con los vectores unitarios de un marco de referencia cartesiano (componentes rectangulares) son:
+$$ \vb{e_t}=\cos\theta \ \vb{i}+\sen\theta \ \vb{j} $$
+$$ \vb{e_n}=-\sen\theta \ \vb{i}+\cos\theta \ \vb{j} $$
+\textbf{\textit{Radio de Curvatura}} \\
+Es una magnitud que mide que la curvatura de una figura geométrica y se define por:
+$$ \rho=\frac{\left[1+\left(\dv{y}{x}\right)^2\right]^{\frac{3}{2}}}{\left|\dv[2]{y}{x}\right|} $$
+$$ \rho=\frac{v^3}{\vb{v}\cross\vb{a}} $$
+Variaciones de los vectores unitarios
+A partir de la derivada de $\vb{e_t}$ y el radio de curvatura se cumple que:
+$$ \vb{\dot{e}_t}=\dot{\theta} \ \vb{e_n}=\omega \ \vb{e_n}=\frac{\dot{s}}{\rho} \ \vb{e_n}=\frac{v}{\rho} \ \vb{e_n} $$

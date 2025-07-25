@@ -1,0 +1,34 @@
+\subsection*{Movimiento rectilíneo - MRUV}
+Considerando la aceleración constante durante toda la trayectoria, se puede modificar las ecuaciones dadas anteriormente.
+\begin{itemize}
+	\item\textit{\textbf{ La primera ecuación: }} está ecuación la obtenemos modificando la ecuación de la definición de la aceleración:
+	\begin{gather*}
+		\int_{v_0}^{v}dv = \int_{0}^{t}a dt \\
+		v=v_0+at
+	\end{gather*}
+	\item \textit{\textbf{La segunda ecuación:}} está ecuación la obtenemos modificando la ecuación de la conocida $a(s)$:
+	\begin{gather*}
+		\int_{v_0}^{v}dv=\int_{0}^{t}ads \\
+		v^2=v_0^2+2a(s-s_0)
+	\end{gather*}
+	\item \textit{\textbf{La tercera ecuación:}} está ecuación la obtenemos modificando la ecuación de la definición de la velocidad y la primera ecuación de MRUV:
+	\begin{gather*}
+		\int_{s_0}^{s}ds=\int_{0}^{t}(v_0+at)dt \\
+		s-s_0=v_0t+\frac{1}{2}at^2
+	\end{gather*}
+	\item \textit{\textbf{La cuarta ecuación:}} está ecuación la obtenemos modificando la ecuación de la velocidad promedio:
+	\begin{gather*}
+		\varDelta s = v_{prom}\cdot t \\
+		s-s_0=\left(\frac{v_0+v}{2}\right)\cdot t
+	\end{gather*}
+\end{itemize}
+Por lo tanto:
+\begin{Theorem*} {Ecuaciones del MRUV}
+	En un movimiento rectilíneo, sí la aceleración permanece constante durante toda la trayectoria entonces se cumple las siguientes ecuaciones:
+	\begin{enumerate}
+		\item $ v=v_0+at $
+		\item $ v^2=v_0^2+2a(s-s_0) $
+		\item $ s-s_0 = v_0t+\frac{1}{2}at^2 $
+		\item $ s-s_0 = \left(\frac{v_0+v}{2}\right) \cdot t $
+	\end{enumerate}
+\end{Theorem*}

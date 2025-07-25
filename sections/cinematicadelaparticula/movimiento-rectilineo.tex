@@ -1,0 +1,56 @@
+\subsection*{Movimiento Rectilineo}
+\subsubsection*{Posición, velocidad y aceleración en movmiento rectilineo}
+En el movimiento rectilíneo, como se trabaja en una dimensión se puede obviar los vectores unitarios, y el modelo cartesiano. Es decir se puede trabajar solo con sus modulos, esto soló para realizar los problemas con mayor rapidez. Entonces transformando se obtiene: \\
+\textbf{\textit{Posición}}
+$$ \mathbf{r}= s\mathbf{e} $$
+\textbf{\textit{Velocidad}}
+$$ \mathbf{v}=\frac{d\mathbf{r}}{dt}=\frac{ds}{dt}\mathbf{e} \hspace{4em} v=\frac{ds}{dt}  $$
+\textbf{\textit{Aceleración}}
+$$ \mathbf{a}=\frac{d\mathbf{v}}{dt}=\frac{d}{dt}(v\mathbf{e})=\frac{dv}{dt}\mathbf{e} \hspace{2.5em} a=\frac{dv}{dt}=\frac{d^2s}{dt^2} $$
+\subsubsection*{Conocidas de $ a $, $v$ y $s$}
+Para trabajar en cinemática es necesario el conocimiento de ecuaciónes diferenciales para obtener funciones especificas sin embargo, tendremos en cuenta que no sabemos este tema, para lo cual trabajaremos con "conocidas". Un punto importante es saber que "conocidas" no es un tema de calculo ni de fisica, si no es ecuaciones diferenciales pero de una forma coloquial o hasta vulgar, util para realizar problemas de cinematica sin ser expertos en ecuaciones diferenciales. \\
+Ahora veremos cambiar de una funcion dependiente a otra, mas comunes que se usan para trabajar en cinematica: \\ \\
+\textbf{\textit{conocida fundamental}}
+\begin{gather*}
+	a=\frac{dv}{dt} \\
+	a=\frac{dv}{dt}\cdot\frac{ds}{ds} \\
+	a=\frac{ds}{dt}\cdot\frac{dv}{ds} \\
+	a=v\frac{dv}{ds} \\
+	ads=vdv \quad a=v\frac{dv}{ds} \quad v=a\frac{ds}{dv}
+\end{gather*}
+\textbf{\textit{conocida de a(s) }} $ \rightarrow $ \textbf{\textit{v(s)}}
+\begin{gather*}
+	a=a(s) \\
+	\frac{dv}{dt}=a(s) \rightarrow \frac{dv}{dt}\cdot\frac{ds}{ds} = a(s) \rightarrow
+	\frac{dv}{ds}\cdot v = a(s) \\
+	vdv=a(s)ds \\
+	\int_{v_0}^{v}vdv=\int_{s_0}^{s}a(s)ds \\
+	v = v(s) 
+\end{gather*}		\textbf{\textit{conocida de v(s) }} $ \rightarrow $ \textbf{\textit{a(s)}}
+\begin{gather*}
+	v=v(s) \\
+	ads=vdv\Rightarrow a\frac{ds}{dv(s)}=v(s) \\
+	a=v(s)\frac{d}{ds}v(s) \\
+	a=a(s)
+\end{gather*}
+\textbf{\textit{conocida de v(s) }} $ \rightarrow $ \textbf{\textit{t(s)}}
+\begin{gather*}
+	t=t(s) \\
+	v=\frac{ds}{dt} \Rightarrow v(s)=\frac{ds}{dt} \rightarrow dt=\frac{ds}{v(s)} \\
+	\int_{t_0}^{t}dt=\int_{s_0}^{s}\frac{1}{v(s)}ds \\
+	t=t(s)
+\end{gather*}
+\textbf{\textit{conocida de a(v) }} $ \rightarrow $ \textbf{\textit{s(v)}}
+\begin{gather*}
+	a=a(v) \\
+	ads=vdv \Rightarrow ds=\frac{vdv}{a(v)} \\
+	\int_{s_0}^{s}ds=\int_{v_s}^{v}\frac{v}{a(v)}dv \\
+	s=s(v)
+\end{gather*}
+\textbf{\textit{conocida de a(v) }} $ \rightarrow $ \textbf{\textit{t(v)}}
+\begin{gather*}
+	a=a(v) \\
+	a=\frac{dv}{dt} \Rightarrow dt=\frac{dv}{a(v)} \\
+	\int_{t_0}^{t}dt=\int_{v_0}^{v}\frac{1}{a(v)}dv \\
+	t=t(v)
+\end{gather*}
